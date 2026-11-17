@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080e17" />
+  <meta name="description" content="PlayTime is a lightweight Windows app that tracks all your game hours across multiple accounts, in one place." />
+  <title>PlayTime — Every hour. One place.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-top" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="PlayTime home">
+        <img src="assets/favicon.svg" alt="" width="37" height="37" />
+        <span>Play<span class="brand-accent">Time</span></span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#preview">App preview</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="#download">Get PlayTime <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> A smarter way to track your playtime <span class="eyebrow-line"></span></div>
+          <h1 id="hero-title">Every hour.<br /><span class="gradient-text">One place.</span></h1>
+          <p class="hero-lead">One lightweight desktop app to track your gaming hours across every game, launcher, and account. Finally, the full picture.</p>
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#download"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="currentColor" d="M3 4.5 11 3.4v8.1H3V4.5Zm9.5-1.3L21 2v9.5h-8.5V3.2ZM3 12.7h8v8.1L3 19.7v-7Zm9.5 0H21v9.3l-8.5-1.2v-8.1Z"/></svg> Get PlayTime <span class="arrow">↗</span></a>
+            <a class="button button-ghost" href="#preview">Explore the app <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-points"><span><i class="check">✓</i> Lightweight by design</span><span><i class="check">✓</i> No cloud required</span><span><i class="check">✓</i> Windows 10 &amp; 11</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit orbit-3"></div>
+          <div class="hero-logo"><img src="assets/favicon.svg" alt="" /></div>
+          <div class="floating-pill pill-a"><span class="pill-icon">◷</span><span><small>PLAYTIME ADDED</small><strong>+ 2h 38m</strong></span></div>
+          <div class="floating-pill pill-b"><span class="stack-icon">▤</span><span><small>ALL ACCOUNTS</small><strong>One total.</strong></span></div>
+          <div class="hero-spark spark-one"></div><div class="hero-spark spark-two"></div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><div class="rule"></div><span>MORE GAMING. LESS GUESSWORK.</span><div class="rule"></div></div>
+    </section>
+
+    <section class="preview-section section" id="preview" aria-labelledby="preview-title">
+      <div class="container">
+        <div class="section-intro centered"><span class="kicker">YOUR GAMING LIFE, ORGANIZED</span><h2 id="preview-title">All your hours. <span class="muted">At a glance.</span></h2><p>A clear view of every minute you've played, without jumping between profiles and launchers.</p></div>
+        <div class="app-frame" role="region" aria-label="Interactive sample of the PlayTime dashboard">
+          <div class="app-titlebar"><span class="app-title"><img src="assets/favicon.svg" alt="" /> Play<span>Time</span></span><span class="app-window-tools" aria-hidden="true">— &nbsp; □ &nbsp; ×</span></div>
+          <div class="app-layout">
+            <aside class="app-sidebar">
+              <div class="side-label">WORKSPACE</div>
+              <button class="side-link selected" type="button" data-view="dashboard"><span>▦</span> Dashboard</button>
+              <button class="side-link" type="button" data-view="games"><span>▤</span> My games</button>
+              <button class="side-link" type="button" data-view="sessions"><span>◷</span> Sessions</button>
+              <button class="side-link" type="button" data-view="accounts"><span>♧</span> Accounts</button>
+              <div class="side-bottom"><span class="tiny-dot"></span> Tracking is active</div>
+            </aside>
+            <div class="app-main">
+              <div class="app-heading"><div><span class="app-overline">OVERVIEW</span><h3 id="dashboard-heading">Your dashboard</h3></div><span class="preview-label"><span class="pulse-dot"></span> LIVE PREVIEW</span></div>
+              <div class="metrics"><div class="metric metric-featured"><span>Total playtime</span><strong>4,862<span>.5h</span></strong><small>↗ &nbsp;Across all games</small></div><div class="metric"><span>Today</span><strong>3<span>h</span> 24<span>m</span></strong><small>Current day</small></div><div class="metric"><span>This week</span><strong>18<span>h</span> 42<span>m</span></strong><small>Last 7 days</small></div><div class="metric"><span>Games tracked</span><strong>24</strong><small>Across your library</small></div></div>
+              <div class="app-content-grid">
+                <div class="library-panel panel"><div class="panel-heading"><h4>Your library</h4><span>3 games</span></div>
+                  <button class="game-row active" type="button" data-game="rocket"><span class="game-avatar rocket-avatar">R</span><span class="game-description"><strong>Rocket League</strong><small>3 accounts linked</small></span><b>2,481h</b></button>
+                  <button class="game-row" type="button" data-game="cs"><span class="game-avatar cs-avatar">CS</span><span class="game-description"><strong>Counter-Strike 2</strong><small>1 account linked</small></span><b>1,354h</b></button>
+                  <button class="game-row" type="button" data-game="apex"><span class="game-avatar apex-avatar">A</span><span class="game-description"><strong>Apex Legends</strong><small>2 accounts linked</small></span><b>627h</b></button>
+                  <div class="library-footer"><span><span class="tiny-dot"></span> Automatically tracking</span></div>
+                </div>
+                <div class="details-panel panel"><div class="panel-heading"><div><span class="app-overline">GAME BREAKDOWN</span><h4 id="detail-name">Rocket League</h4></div><span class="detail-badge" id="detail-badge">3 ACCOUNTS</span></div>
+                  <div class="total-line"><div><small>Combined playtime</small><strong id="detail-total">2,481<span>.3h</span></strong></div><div class="mini-chart" aria-hidden="true"><i style="height:32%"></i><i style="height:52%"></i><i style="height:41%"></i><i style="height:73%"></i><i style="height:56%"></i><i style="height:100%"></i><i style="height:81%"></i><i style="height:90%"></i><i style="height:68%"></i><i style="height:92%"></i><i style="height:80%"></i><i style="height:100%"></i></div></div>
+                  <div class="account-header"><span>ACCOUNT</span><span>TIME PLAYED</span></div><div id="account-rows" class="account-rows"><div class="account-row"><span><i class="account-mark epic">E</i> Epic Main</span><strong>1,520.6h</strong></div><div class="account-row"><span><i class="account-mark epic">E</i> Epic Alt</span><strong>610.2h</strong></div><div class="account-row"><span><i class="account-mark steam">S</i> Steam</span><strong>350.5h</strong></div></div>
+                  <div class="detail-footer"><span>◷ &nbsp; Hours update automatically</span><span class="detail-tag">ALL IN ONE</span></div>
+                </div>
+              </div>
+              <div class="preview-footnote">Illustrative interface and sample data — not a live connection to your accounts.</div>
+            </div>
+          </div>
+        </div>
+        <div class="preview-below"><div><span class="small-sun">✳</span> No multiple-launcher math required</div><div><span class="small-sun">✳</span> All accounts roll into one total</div><div><span class="small-sun">✳</span> Historical hours stay intact</div></div>
+      </div>
+    </section>
+
+    <section class="features-section section" id="features" aria-labelledby="features-title"><div class="container"><div class="section-intro left"><span class="kicker">EVERYTHING YOU NEED</span><h2 id="features-title">Built for how <span class="gradient-text">you actually play.</span></h2><p>Multiple launchers, multiple accounts, thousands of existing hours. PlayTime brings it all together.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-wide"><div class="feature-icon">▤</div><div><span class="feature-index">01 / UNIFIED PLAYTIME</span><h3>One game. Every account.</h3><p>Epic main, Epic alt, Steam, and everything in between. Your hours are combined into one total, with every account still visible.</p></div><div class="feature-example"><div><span class="example-led"></span> Rocket League <strong>2,481.3h</strong></div><div><span class="example-led blue"></span> Epic Main <strong>1,520.6h</strong></div><div><span class="example-led purple"></span> Epic Alt <strong>610.2h</strong></div><div><span class="example-led gray"></span> Steam <strong>350.5h</strong></div></div></article>
+        <article class="feature-card"><div class="feature-icon">◷</div><span class="feature-index">02 / AUTOMATIC TRACKING</span><h3>Just launch and play.</h3><p>Game opens, timer starts. Game closes, time is saved. Track sessions silently in the background.</p><div class="feature-visual timer-visual"><span class="status-dot"></span><span>TRACKING SESSION</span><strong>02:38:14</strong><small>Rocket League · Epic Main</small></div></article>
+        <article class="feature-card"><div class="feature-icon">✎</div><span class="feature-index">03 / YOUR EXISTING HOURS</span><h3>Start where you left off.</h3><p>Already have 3,000 hours? Add them once and keep tracking from there. Edit or correct your totals anytime.</p><div class="feature-visual edit-visual"><span>Existing playtime</span><strong>3,000 <small>hours</small></strong><div class="edit-tag">✓ Saved to your total</div></div></article>
+        <article class="feature-card"><div class="feature-icon">▥</div><span class="feature-index">04 / PLAYTIME INSIGHTS</span><h3>See the bigger picture.</h3><p>Daily, weekly, and lifetime stats, account breakdowns, and session history all in one place.</p></article>
+        <article class="feature-card"><div class="feature-icon">↯</div><span class="feature-index">05 / LIGHTWEIGHT BY DESIGN</span><h3>Tracks games. Not your resources.</h3><p>Designed as a native Windows app with a tiny background footprint and no browser runtime.</p></article>
+        <article class="feature-card"><div class="feature-icon">⌁</div><span class="feature-index">06 / LOCAL FIRST</span><h3>Your data stays yours.</h3><p>Local database, offline operation, and easy backups. No account registration or cloud sync required.</p></article>
+      </div></div></section>
+
+    <section class="how-section section" id="how-it-works"><div class="container"><div class="section-intro centered"><span class="kicker">THREE SIMPLE STEPS</span><h2>Set it up once. <span class="muted">Forget it's there.</span></h2></div><div class="steps-grid"><article><span class="step-num">01</span><h3>Add your games</h3><p>Find installed games or add any executable manually.</p></article><article><span class="step-num">02</span><h3>Bring your hours</h3><p>Enter existing hours and assign them to the right accounts.</p></article><article><span class="step-num">03</span><h3>Play normally</h3><p>PlayTime quietly records your sessions and updates your totals.</p></article></div></div></section>
+
+    <section class="download-section section" id="download"><div class="container"><div class="download-panel"><div class="download-glow" aria-hidden="true"></div><div class="download-symbol"><img src="assets/favicon.svg" alt="" /></div><span class="kicker">YOUR PLAYTIME, FINALLY TOGETHER</span><h2>Stop counting accounts.<br /><span class="gradient-text">Start counting hours.</span></h2><p>PlayTime is being built for Windows. The download will be available here once the app has a release build.</p><div class="coming-soon"><span class="status-dot"></span> Windows release coming soon</div><small>No download is currently available. This is a product website preview.</small></div></div></section>
+
+    <section class="faq-section section" id="faq"><div class="container faq-grid"><div class="section-intro left"><span class="kicker">QUESTIONS &amp; ANSWERS</span><h2>Good to <span class="muted">know.</span></h2><p>The essentials about how PlayTime is designed to work.</p></div><div class="faq-list"><details><summary>Does it combine hours from multiple accounts?<span>+</span></summary><p>Yes. Each game has a single combined total, while individual Steam and Epic accounts can keep their own hour breakdowns.</p></details><details><summary>Can I add hours I've already played?<span>+</span></summary><p>Yes. Enter the existing playtime for any game or account. Future tracked sessions add to that baseline instead of replacing it.</p></details><details><summary>Will it automatically know which Epic account I'm using?<span>+</span></summary><p>Only when reliable account-identification information is available. Otherwise, sessions are left unassigned so you can choose the correct account without inaccurate guesses.</p></details><details><summary>Does the app need an internet connection?<span>+</span></summary><p>No. The planned core tracking and database work locally. Optional launcher integrations may require an internet connection.</p></details><details><summary>Is PlayTime available to download now?<span>+</span></summary><p>Not yet. This is the website for the planned application; a download button can be added when a tested Windows build is ready.</p></details></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#top"><img src="assets/favicon.svg" alt="" width="33" height="33" /> <span>Play<span class="brand-accent">Time</span></span></a><span>Every hour. One place.</span><a href="#top">Back to top ↑</a></div><div class="container copyright">© <span id="year"></span> PlayTime. Concept website. All third-party game and launcher names belong to their respective owners.</div></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
